@@ -1,0 +1,494 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* obs */
+  max-width: 100vw;
+  /* obs */
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.limitar-secao {
+  max-width: 1024px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+/* ------------------- SECAO TOPO ----------------------------*/
+header {
+  height: 100px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid black;
+  box-shadow: 0 0 5px white;
+}
+.topo {
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+span {
+  color: #ae8625;
+  font-weight: bold;
+}
+.topo a {
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 10px;
+  color: white;
+}
+.topo a:hover {
+  color: #ae8625;
+  font-weight: bold;
+  text-shadow: 0 0 5px #ae8625;
+}
+.topo p {
+  color: white;
+  text-align: center;
+}
+.logo img {
+  margin-left: 30px;
+  width: 150px;
+}
+.logo {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.logo h1 {
+  color: #ae8625;
+  padding-left: 5px;
+  font-size: 25px;
+}
+.logo p {
+  font-size: 14px;
+}
+/* ----RESPONSIVO TOPO ------*/
+@media (max-width: 500px) {
+  .topo {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  header {
+    height: 115px;
+    width: 100%;
+  }
+  .logo img {
+    width: 115px;
+  }
+  .logo h1 {
+    color: #ae8625;
+    font-size: 20px;
+  }
+  .topo a {
+    font-size: 15px;
+  }
+  .topo nav {
+    padding-top: 5px;
+  }
+}
+
+/* ------------------- SECAO BANNER ----------------------------*/
+.secao-banner {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  height: auto;
+  margin-top: 90px;
+}
+
+.banner-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+}
+.banner-texto h3 {
+  font-size: 65px;
+  padding-bottom: 20px;
+  color: #ae8625;
+}
+.banner-texto p {
+  line-height: 30px;
+  font-size: 20px;
+}
+.banner-texto img {
+  padding-top: 20px;
+  margin-left: 5px;
+  width: 35px;
+  margin-bottom: 30px;
+}
+.banner-texto img:hover {
+  width: 40px;
+}
+
+.perfil-banner {
+  padding-top: 70px;
+}
+.perfil-banner img {
+  width: 500px;
+}
+
+.img3 {
+  width: 450px;
+  right: 350px;
+  top: 350px;
+  /* position: absolute; */
+}
+.botao a {
+  background-color: #ae8625;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 1px;
+  box-shadow: 0 0 5px#ae8625;
+  color: white;
+  font-size: 20px;
+}
+.botao a:hover {
+  background-color: white;
+  color: #ae8625;
+}
+/* ----RESPONSIVO SECAO BANNER ------*/
+@media (max-width: 500px) {
+  .secao-banner {
+    margin-top: 100px;
+    padding-top: 30px;
+  }
+  .secao-banner h3 {
+    font-size: 25px;
+    text-align: center;
+    max-width: 200px;
+  }
+  .banner-texto {
+    align-items: center;
+    text-align: center;
+  }
+  .banner-texto p {
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .banner-texto img {
+    padding-top: 5px;
+    margin-left: 5px;
+    width: 18px;
+    margin-bottom: 10px;
+  }
+  .banner-texto img:hover {
+    width: 20px;
+  }
+
+  .perfil-banner {
+    padding: 15px 0 0 0;
+    margin: 0;
+  }
+  .perfil-banner img {
+    width: 300px;
+  }
+  .botao {
+    max-width: 300px;
+    font-size: 16px;
+  }
+  .botao a {
+    font-size: 10px;
+    padding: 5px 15px;
+  }
+}
+/* ------------------- SECAO MEIO ----------------------------*/
+.secao-meio {
+  height: 50px;
+  background-color: #ae8625;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.secao-meio span {
+  color: black;
+}
+/* ----RESPONSIVO SECAO MEIO ------*/
+@media (max-width: 500px) {
+  .secao-meio {
+    width: 100%;
+    margin: 0;
+  }
+  .secao-meio h2 {
+    padding: 15px 0 15px 0;
+    font-size: 20px;
+    text-align: center;
+    max-width: 300px;
+  }
+}
+/* ------------------- SECAO CARDS ----------------------------*/
+
+.secao-cards-interno {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+.cards1,
+.cards2,
+.cards3,
+.cards4 {
+  background-color: #ae8625;
+  width: 250px;
+  height: 300px;
+  box-shadow: 2px 2px 10px black;
+  text-align: center;
+}
+.cards1 img,
+.cards2 img,
+.cards3 img,
+.cards4 img {
+  width: 40px;
+  margin-top: -5px;
+  margin-left: -5px;
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 15px white;
+}
+
+.card-interno1,
+.card-interno2,
+.card-interno3,
+.card-interno4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 275px;
+}
+.card-interno1 {
+  background-image: url("assets/familia.jpg");
+}
+.card-interno2 {
+  background-image: url("assets/consumidor.jpg");
+}
+.card-interno3 {
+  background-image: url("assets/empresarial.jpg");
+}
+.card-interno4 {
+  background-image: url("assets/criminal.jpg");
+}
+.cards1 a,
+.cards2 a,
+.cards3 a,
+.cards4 a {
+  color: white;
+  padding: 15px 0 0 15px;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 0 0 5px black;
+}
+.secao-cards a:hover {
+  text-shadow: 0 0 5px white;
+}
+.card-interno1 h4,
+.card-interno2 h4,
+.card-interno3 h4,
+.card-interno4 h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  padding-top: 35px;
+  text-shadow: 5px 5px 5px black;
+}
+
+/* ----RESPONSIVO CARDS ------*/
+@media (max-width: 500px) {
+  .secao-cards-interno {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .cards1,
+  .cards2,
+  .cards3,
+  .cards4 {
+    max-width: 250px;
+  }
+
+  .secao-cards-interno {
+    padding: 35px 0;
+  }
+}
+/* ------------------- SECAO FIM ----------------------------*/
+.secao-fim {
+  background-color: black;
+  color: white;
+  height: auto;
+}
+.secao-fim-interno {
+  max-width: 1024px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.secao-fim-textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+}
+.secao-fim-textos h1 {
+  color: #ae8625;
+  font-size: 45px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 0 5px #ae8625;
+}
+.secao-fim-textos p {
+  padding-bottom: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+.secao-fim-imagem img {
+  width: 375px;
+}
+.secao-fim-textos img {
+  width: 250px;
+  padding-top: 15px;
+}
+/* ----RESPONSIVO SECAO FIM ------*/
+@media (max-width: 500px) {
+  .secao-fim-imagem img {
+    width: 250px;
+  }
+  .secao-fim {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  .secao-fim-interno {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .secao-fim-textos {
+    align-items: center;
+    justify-content: center;
+  }
+  .secao-fim-textos h1 {
+    font-size: 30px;
+    align-items: center;
+  }
+  .secao-fim-textos img {
+    display: none;
+  }
+  .secao-fim-textos p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    max-width: 350px;
+  }
+  .secao-fim-interno .botao {
+    padding: 5px 0 15px 0;
+    margin-bottom: 5px;
+  }
+}
+/* ------------------- SECAO RODAPÉ ----------------------------*/
+footer {
+  height: 90px;
+  background-color: black;
+  border-top: 1px solid #ae8625;
+  box-shadow: 0 0 5px white;
+}
+.rodape {
+  font-size: 18px;
+  padding-top: 15px;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.rodape h6 {
+  color: #ae8625;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+.rodape a {
+  color: #ae8625;
+  font-weight: bold;
+  text-decoration: none;
+}
+.rodape a:hover {
+  font-size: 20px;
+  text-shadow: 0 0 5px #ae8625;
+}
+.rodape1 img {
+  width: 150px;
+}
+.rodape2 p {
+  width: 200px;
+  text-align: center;
+}
+.rodape3 {
+  text-align: center;
+}
+.rodape-whats img {
+  width: 40px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+footer strong {
+  color: #ae8625;
+}
+.rodape-whats img:hover {
+  width: 45px;
+  box-shadow: 0 0 5px white;
+  border-radius: 50%;
+}
+@media (max-width: 500px) {
+  .rodape {
+    flex-direction: column;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+  }
+  .rodape1 {
+    margin-bottom: 10px;
+  }
+  .rodape2 {
+    border: 1px solid white;
+    margin-bottom: 10px;
+    padding: 0 30px;
+    font-size: 16px;
+  }
+  .rodape3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .rodape-whats {
+    display: none;
+  }
+}
